@@ -1,0 +1,23 @@
+# Byte-compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.venv/
+env*/
+venv*/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Data files that should not sync (optional)
+*.zip
+*.tar
+*.gz
