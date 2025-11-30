@@ -11,10 +11,10 @@ st.title(" Global Air Quality Dashboard")
 
 df = pd.read_csv("data/air_quality_final.csv")
 
-st.subheader("📌 Preview of Dataset (Head 10)")
+st.subheader("Preview of Dataset (Head 10)")
 st.dataframe(df.head(10))
 
-st.markdown("## 🌍 Average Pollutant Levels by Country")
+st.markdown("## Average Pollutant Levels by Country")
 
 # Select columns for pollutant averages
 pollutant_columns = ["PM2.5", "PM10", "NO2", "SO2", "CO", "O3"]
@@ -65,7 +65,7 @@ st.dataframe(aqi_counts_top3)
 
 
 # Seasonal PM2.5 Variation
-st.subheader("3️⃣ Seasonal PM2.5 Variation in Top 3 Polluted Countries")
+st.subheader("Seasonal PM2.5 Variation in Top 3 Polluted Countries")
 
 seasonal_df = (
     df_top3.groupby(["Season", "Country"])["PM2.5"]
